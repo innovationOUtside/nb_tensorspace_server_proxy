@@ -70,14 +70,14 @@ function createModel() {
 	model.load( {
 
 		type: "tfjs",
-		url: './mnist.json',
+		url: '../assets/mnist.json',
 
 	} );
 
 	model.init( function() {
 
 		$.ajax({
-			url: "./5.json",
+			url: "../assets/5.json",
 			type: 'GET',
 			async: true,
 			dataType: 'json',

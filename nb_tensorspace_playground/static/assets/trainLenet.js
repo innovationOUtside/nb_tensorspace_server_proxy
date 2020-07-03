@@ -101,7 +101,7 @@ function getDigitData() {
 
 	$.ajax( {
 
-		url: "./" + dataIndex + ".json",
+		url: "../assets/" + dataIndex + ".json",
 		type: 'GET',
 		async: true,
 		dataType: 'json',
