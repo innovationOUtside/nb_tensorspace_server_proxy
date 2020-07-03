@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <!-- saved from url=(0058)https://tensorspace.org/html/playground/trainingLeNet.html -->
-<html lang="en" class="mdl-js"><script type="text/javascript">window["_gaUserPrefs"] = { ioo : function() { return true; } }</script><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<html lang="en" class="mdl-js"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     
     <title>TensorSpace Playground - LeNet</title>
 
@@ -9,30 +9,30 @@
     <link rel="icon" href="https://tensorspace.org/assets/img/common/logo.ico" type="‘image/x-ico’">
     <meta name="viewport" content="width = device-width, initial-scale =1.0, maximum-scale = 1.0, user-scalable = no">
 
-    <script src="../static/jquery.min.js"></script><style>@media print {#ghostery-purple-box {display:none !important}}</style>
-    <link rel="stylesheet" href="../static/bootstrap.min.css">
-    <script src="../static/bootstrap.min.js"></script>
-    <script src="../static/three.min.js"></script>
-    <script src="../static/tween.min.js"></script>
-    <script src="../static/tf.min.js"></script>
-    <script src="../static/TrackballControls.js"></script>
-    <script src="../static/stats.min.js"></script>
-    <script src="../static/tensorspace.min.js"></script>
-    <script src="../static/signature_pad.min.js"></script>
+    <script src="../assets/jquery.min.js"></script><style>@media print {#ghostery-purple-box {display:none !important}}</style>
+    <link rel="stylesheet" href="../assets/bootstrap.min.css">
+    <script src="../assets/bootstrap.min.js"></script>
+    <script src="../assets/three.min.js"></script>
+    <script src="../assets/tween.min.js"></script>
+    <script src="../assets/tf.min.js"></script>
+    <script src="../assets/TrackballControls.js"></script>
+    <script src="../assets/stats.min.js"></script>
+    <script src="../assets/tensorspace.min.js"></script>
+    <script src="../assets/signature_pad.min.js"></script>
 
-    <link rel="stylesheet" href="../static/material.fonts.css">
-    <link rel="stylesheet" href="../static/material.min.css">
-    <script src="../static/material.min.js"></script>
+    <link rel="stylesheet" href="../assets/material.fonts.css">
+    <link rel="stylesheet" href="../assets/material.min.css">
+    <script src="../assets/material.min.js"></script>
 
-    <link rel="stylesheet" href="../static/common.css">
-    <link rel="stylesheet" href="../static/playground.css">
-    <link rel="stylesheet" href="../static/imageSelector.css">
-    <link rel="stylesheet" href="../static/playgroundLenetTrain.css">
+    <link rel="stylesheet" href="../assets/common.css">
+    <link rel="stylesheet" href="../assets/playground.css">
+    <link rel="stylesheet" href="../assets/imageSelector.css">
+    <link rel="stylesheet" href="../assets/playgroundLenetTrain.css">
 
-    <script src="../static/playground.js"></script>
+    <script src="../assets/playground.js"></script>
     <!--<script src="../../js/lenet.js"></script>-->
-    <script src="../static/trainLenet.js"></script>
-    <script src="../static/mnist_data.js"></script>
+    <script src="../assets/trainLenet.js"></script>
+    <script src="../assets/mnist_data.js"></script>
 
 </head>
 
@@ -44,7 +44,7 @@
 
         <div id="logo">
             <a href="https://tensorspace.org/index.html">
-                <img src="../static/logoSmall.png">
+                <img src="../assets/logoSmall.png">
                 <div>TensorSpace.js</div>
             </a>
         </div>
@@ -77,18 +77,12 @@
     </ul>
 
     <ul id="nav-collapse" class="nav navbar-nav">
-        <li><a href="https://tensorspace.org/index.html">Home</a></li>
-        <li><a href="https://tensorspace.org/html/docs/startIntro.html">Documentation</a></li>
-        <li><a href="https://tensorspace.org/index.html#download">Download</a></li>
-        <!--<li><a href="../developer.html">Developer</a></li>-->
+        <li><a href="../index.html">Home</a></li>
     </ul>
 
     <div class="language">
         <div class="selected">
             <div>EN</div>
-        </div>
-        <div>
-            <div><a href="https://tensorspace.org/html/playground/trainingLeNet_zh.html">中</a></div>
         </div>
     </div>
 
@@ -98,14 +92,6 @@
     <div><a href="https://tensorspace.org/html/playground/index.html">Introduction</a></div>
     <div><a href="https://tensorspace.org/html/playground/lenet.html">LeNet</a><span class="aside-size-of-model">0.2MB</span></div>
     <div class="now-label">LeNet Training Visualization</div>
-    <div><a href="https://tensorspace.org/html/playground/alexnet.html">AlexNet</a><span class="aside-size-of-model">237MB</span></div>
-    <!--<div><a href="vgg16.html">VGG-16</a><span class="aside-size-of-model">527MB</span></div>-->
-    <div><a href="https://tensorspace.org/html/playground/inceptionv3.html">InceptionV3</a><span class="aside-size-of-model">96MB</span></div>
-    <div><a href="https://tensorspace.org/html/playground/resnet50.html">ResNet-50</a><span class="aside-size-of-model">98MB</span></div>
-    <div><a href="https://tensorspace.org/html/playground/mobilenetv1.html">MobileNetv1</a><span class="aside-size-of-model">16MB</span></div>
-    <div><a href="https://tensorspace.org/html/playground/yolov2-tiny.html">YOLOv2-tiny</a><span class="aside-size-of-model">60MB</span></div>
-    <div><a href="https://tensorspace.org/html/playground/acgan.html">ACGAN</a><span class="aside-size-of-model">3MB</span></div>
-    <img id="close" src="../static/close.png">
 </aside>
 
 <div id="curtain"></div>
@@ -186,34 +172,34 @@
         <header>Select a Predict Digit</header>
         <main>
             <div>
-                <img id="data0" src="../static/0.png">
+                <img id="data0" src="../assets/0.png">
             </div>
             <div>
-                <img id="data1" src="../static/1.png">
+                <img id="data1" src="../assets/1.png">
             </div>
             <div>
-                <img id="data2" src="../static/2.png">
+                <img id="data2" src="../assets/2.png">
             </div>
             <div>
-                <img id="data3" src="../static/3.png">
+                <img id="data3" src="../assets/3.png">
             </div>
             <div>
-                <img id="data4" src="../static/4.png">
+                <img id="data4" src="../assets/4.png">
             </div>
             <div>
-                <img id="data5" src="../static/5.png">
+                <img id="data5" src="../assets/5.png">
             </div>
             <div>
-                <img id="data6" src="../static/6.png">
+                <img id="data6" src="../assets/6.png">
             </div>
             <div>
-                <img id="data7" src="../static/7.png">
+                <img id="data7" src="../assets/7.png">
             </div>
             <div>
-                <img id="data8" src="../static/8.png">
+                <img id="data8" src="../assets/8.png">
             </div>
             <div>
-                <img id="data9" src="../static/9.png">
+                <img id="data9" src="../assets/9.png">
             </div>
         </main>
         <footer>
