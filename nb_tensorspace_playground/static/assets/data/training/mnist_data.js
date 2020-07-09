@@ -13,9 +13,9 @@ const NUM_TRAIN_ELEMENTS = Math.floor( TRAIN_TEST_RATIO * NUM_DATASET_ELEMENTS )
 const NUM_TEST_ELEMENTS = NUM_DATASET_ELEMENTS - NUM_TRAIN_ELEMENTS;
 
 const MNIST_IMAGES_SPRITE_PATH =
-	'../../assets/data/training/mnist_images.png';
+	'../assets/data/training/mnist_images.png';
 const MNIST_LABELS_PATH =
-	'../../assets/data/training/mnist_labels_uint8';
+	'../assets/data/training/mnist_labels_uint8';
 
 class MnistData {
 
