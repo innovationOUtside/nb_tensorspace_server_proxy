@@ -7,6 +7,10 @@ Copy of some of original [Tensorspace playground](https://github.com/tensorspace
 
 ![](.images/tfs_playground_nbserverproxy.png)
 
+The applciation itself will attempt to recognise a handwritten digit and allows the use to interactively inspect each layer of the a tennsorflow netwrok trained to recognise digits.
+
+![](.images/TensorSpace_Playground_-_LeNet.png)
+
 See also:
 
 - [`nb_tensorflow_playground_serverproxy`](https://github.com/innovationOUtside/nb_tensorflow_playground_serverproxy) which does a similar thing for the *Tensorflow Playground*;
